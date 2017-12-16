@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Eat-Da-Burger!</title>
+    <!-- link in CSS, jquery, bootstrap -->
+    <link href="assets/css/burger_style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <!-- image of burger, centered, clear backgroung -->
+    <div class="wrapper">
+        <img id="burgerpic" src="../public/assets/img/burger.jpeg">
+        <h1 class="header">Eat-Da-Burger</h1>
+        <!-- create content around a container that will hold the burger results -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="container" id="freshBurgerField">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <p>burger example!</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <button type="submit" class="btn btn-primary">Devour!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="container">
+                        <p>devoured burger!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bootstrap an input field -->
+        <form>
+            <div class="form-group">
+                <label for="formlabelarea"></label>
+                <textarea class="form-control" id="formTextArea" rows="2"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- bootstrap a button -->
+        <h4 class="directions">Enter a burger you want to eat and then click "submit". Click "devour" to eat the burger</h4>
+    </div>
+</body>
+
+</html>

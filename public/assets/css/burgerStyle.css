@@ -1,0 +1,15 @@
+.wrapper {
+    width: 640px;
+}
+
+#header {
+    text-align: center;
+}
+
+#submit {
+    text-align: center;
+}
+
+#burgerImage {
+    height: 200px;
+}

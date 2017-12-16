@@ -1,0 +1,36 @@
+<!-- image of burger, centered, clear backgroung -->
+<img id="burgerImage" src="/assets/img/burger.jpeg">
+<h1 class="header">Eat-Da-Burger</h1>
+<!-- create content around a container that will hold the burger results -->
+
+<div class="container" id="freshBurgerField">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="container">
+                <h3>Burgers to eat!</h3>
+                {{#each burgers}}
+                    {{#unless devoured}} {{> burgers/burger-block devour=true}} {{/unless}}
+                {{/each}}
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="container">
+                <h3>Burgers you ate!</h3>
+                {{#each burgers}}
+                    {{#if devoured}} {{name}} {{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- bootstrap an input field -->
+<form class="createBurger">
+    <div class="form-group">
+        <label for="formlabelarea"></label>
+        <input type="test" id="br" name="name">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!-- bootstrap a button -->
+<h4 class="directions">Enter a burger you want to eat and then click "submit". Click "devour" to eat the burger</h4>
